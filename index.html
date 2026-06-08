@@ -226,11 +226,15 @@
    <!-- YAPPING PAGE -->
    <div id="page-yapping" class="page-enter h-full w-full px-6 py-12 hidden">
     <div class="max-w-sm mx-auto">
-     <div class="letter-paper rounded-sm p-6 mb-12">
+     <div class="letter-paper rounded-sm p-6 mb-6">
       <h2 class="text-3xl mb-6 text-center" style="font-family: 'Playfair Display', serif; color: #ff69b4; font-weight: 700;">Yapping Time 💕</h2>
-      <p class="leading-relaxed romantic-text text-sm">
+      <p class="leading-relaxed romantic-text text-sm mb-6">
        haii bidadariku yang lucu, cantik, gemes, suka ice cream dan berak juga 😂, ga nyangka ya kita bisa kenal sejauh ini, dari yang awalnya cuma bosen cari temen doang malah jadi asik sampe sekarang. aku suka ceritamu aku suka dengar semua tentang kamu, dari yapping kamu itu buat aku jadi senyum sendiri di depan layar hp HAHAHHA, entahlahh aku juga bingung sama perasaan ini happy aja kalo lagi dengerin kamu yapping, akhir-akhir ini kamu sibuk ya.. jujur aku gabisa tahan rindu ini mending kalo deket mah bisa tak samperin tak gedor rumah sahrini nasip LDR. sebenrnya masih banyak hheheh capek call aja kalo bowleh 💕
       </p>
+      <!-- Tambahan Tombol WA di Yapping -->
+      <a href="https://wa.me/6285117023458?text=Hai%20ganteng%2C%20aku%20udah%20buka%20websitenya!%20%F0%9F%A5%B0" target="_blank" class="w-full flex items-center justify-center gap-2 py-3 rounded bg-green-500 hover:bg-green-600 font-bold transition-all text-white text-sm shadow">
+        <i data-lucide="message-circle"></i> Hubungi via WhatsApp 💬
+      </a>
      </div>
      <button onclick="navigate('menu')" class="w-full px-6 py-3 rounded-sm" style="background: #ff69b4; color: #3d1a2a; font-weight: 600;"> ← KEMBALI </button>
     </div>
@@ -267,12 +271,17 @@
         </div>
       </div>
 
-      <div id="success-stage" class="hidden page-enter">
+      <!-- Tambahan Tombol WA di Success Stage -->
+      <div id="success-stage" class="hidden page-enter flex flex-col items-center">
         <div class="text-6xl mb-6 animate-bounce">💖</div>
         <h1 class="text-4xl font-bold text-pink-500 mb-4" style="font-family: 'Playfair Display', serif;">Yayy!</h1>
         <p class="text-xl text-white font-semibold mb-2">I Love You, Divana! 🔒💞</p>
-        <p class="text-sm text-gray-400">From: People of Purwokerto</p>
-        <p class="text-sm text-gray-400">Mulai hari ini kita jadian ya! 💕</p>
+        <p class="text-sm text-gray-400 mb-2">From: People of Purwokerto</p>
+        <p class="text-sm text-gray-400 mb-8">Mulai hari ini kita jadian ya! 💕</p>
+        
+        <a href="https://wa.me/6285117023458?text=Hai%20ganteng%2C%20aku%20udah%20buka%20websitenya!%20%F0%9F%A5%B0%20Aku%20mau%20jadi%20pacar%20kamu!%20%F0%9F%92%95" target="_blank" class="w-full flex items-center justify-center gap-2 py-4 rounded bg-green-500 hover:bg-green-600 font-bold transition-all text-white text-base shadow-lg animate-pulse">
+          <i data-lucide="message-circle"></i> Kirim Pesan ke WhatsApp 🔒💝
+        </a>
       </div>
     </div>
    </div>
@@ -333,6 +342,7 @@
     function acceptConfession() {
       document.getElementById('question-stage').classList.add('hidden');
       document.getElementById('success-stage').classList.remove('hidden');
+      document.getElementById('success-stage').classList.add('flex');
       
       for (let i = 0; i < 50; i++) {
         setTimeout(() => {
